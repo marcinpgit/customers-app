@@ -43,7 +43,7 @@
 
 (function() {
 
-    var CustomersController = function (s, f, b) {
+    var CustomersController = function ($scope, foo, bar) {
         $scope.sortBy = 'name';
         $scope.reverse = false;
 
@@ -59,7 +59,9 @@
         };
     };
 
+    CustomersController.$inject = ['$scope', 'foo', 'bar'];
+
     angular.module('customersApp')
-    .controller('CustomersController', ['$scope', 'foo', 'bar', CustomersController]);
+    .controller('CustomersController', CustomersController);
 
 }());
