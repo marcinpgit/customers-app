@@ -1,12 +1,8 @@
-.red {
-    color: red;
+table {
+    width: 500px;   
 }
 
-.navy {
-    color: navy;   
-}
-
-/* ng-cloak */
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-    display: none !important;
+th {
+    text-align: left;
+    background-color: #efefef;
 }
